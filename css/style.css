@@ -1,7 +1,7 @@
 /*Custom Variables*/
 :root {
-  --primary-color: #FFFFFF;
-  /*--text-color-light: #5B5B5B;*/
+  --secondary-color: #FFFFFF;
+  --primary-color: #263B55;
   --text-color-bold:  #614751;
   --light-color: #F9F9F9;
   --cream-color: #E5E5E5;
@@ -18,10 +18,15 @@ a {
   border-radius: 0;
 }
 .btn-primary {
-  background-color: var(--primary-color);
-  border: 1px solid var(--primary-color);
+  background-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
   color:  #333333;
   font-weight: 600;
+}
+.btn-primary:hover {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  color: #FFFFFF;
 }
 
 
@@ -32,10 +37,10 @@ a {
   background-size: cover;
   background-attachment: fixed;
   height: 95vh;
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 .hero-content {
-  padding: 15rem 0 0 1rem;
+  padding: 10rem 0 0 1rem;
 }
 .hero-content h1 {
   font-weight: 700;
@@ -44,5 +49,5 @@ a {
   opacity: 0.7;
 }
 .navbar-dark .navbar-nav .nav-link {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
