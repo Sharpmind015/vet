@@ -1,0 +1,48 @@
+/*Custom Variables*/
+:root {
+  --primary-color: #FFFFFF;
+  /*--text-color-light: #5B5B5B;*/
+  --text-color-bold:  #614751;
+  --light-color: #F9F9F9;
+  --cream-color: #E5E5E5;
+  --animate-delay: 0.5s;
+}
+/*General style*/
+body {
+  font-family: 'Muli', sans-serif;
+}
+a {
+  font-size: 1rem;
+}
+.btn {
+  border-radius: 0;
+}
+.btn-primary {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  color:  #333333;
+  font-weight: 600;
+}
+
+
+#hero {
+  background: url('../img/Rectangle 38.jpg') #C4C4C4;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 95vh;
+  color: var(--primary-color);
+}
+.hero-content {
+  padding: 15rem 0 0 1rem;
+}
+.hero-content h1 {
+  font-weight: 700;
+}
+.hero-content span {
+  opacity: 0.7;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--primary-color);
+}
