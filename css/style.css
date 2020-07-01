@@ -78,6 +78,10 @@ img {
 .navbar-dark .navbar-nav .nav-link {
   color: var(--secondary-color);
 }
+.nav-scroll {
+  box-shadow: 2px 6px 10px rgba(38, 59, 85, 0.2);
+  background: var(--primary-color);
+}
 .about-content {
   height: 771px;
   color: #FFFFFF;
@@ -140,4 +144,82 @@ img {
 }
 #footer a:hover {
   color: #C4C4C4;
+}
+
+
+@media screen and (max-width: 768px) {
+  .testimonial-content {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+.burger-menu {
+  width: 35px;
+  cursor: pointer;
+  position: fixed;
+  z-index: 9999;
+  top: 14px;
+  right: 30px;
+}
+
+.burger-menu div {
+  height: 3px;
+  margin: 5px;
+  background: #FFFFFF;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  /*position: fixed;*/
+}
+
+.line-1 {
+  width: 35px;
+}
+
+.line-2 {
+  width: 29px;
+}
+
+.line-3 {
+  width: 25px;
+}
+
+.toggle div {
+  width: 40px;
+}
+
+.toggle .line-1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 7px);
+          transform: rotate(-45deg) translate(-6px, 7px);
+}
+
+.toggle .line-2 {
+  opacity: 0;
+}
+
+.toggle .line-3 {
+  -webkit-transform: rotate(45deg) translate(-4px, -7px);
+          transform: rotate(45deg) translate(-4px, -7px);
+}
+@media (max-width: 768px){
+  .navbar-collapse {
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: var(--primary-color);
+    width: 100%;
+    z-index: 999;
+    display: hidden;
+  }
+  .navbar-nav{
+    align-items: center;
+    justify-content: space-around;
+  }
+  .navbar-collapse ul {
+    height: 100%;
+    width: 100%;
+    margin-left: 0;
+  }
 }
