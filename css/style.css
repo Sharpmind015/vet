@@ -3,8 +3,6 @@
   --secondary-color: #FFFFFF;
   --primary-color: #263B55;
   --text-color-bold:  #614751;
-  --light-color: #F9F9F9;
-  --cream-color: #E5E5E5;
   --animate-delay: 0.5s;
 }
 /*General style*/
@@ -20,6 +18,9 @@ a {
 img {
   object-fit: cover;
 }
+/******************************************************************************************************
+                                      UTILITIES
+*******************************************************************************************************/
 .mt-10 {
   margin-top: 6rem;
 }
@@ -29,6 +30,13 @@ img {
 .py-6 {
   padding: 4rem 0;
 }
+.opaque {
+  opacity: 0.6;
+}
+
+/******************************************************************************************************
+                                      BUTTONS
+*******************************************************************************************************/
 .btn {
   border-radius: 0;
 }
@@ -60,37 +68,9 @@ img {
 }
 
 
-#hero {
-  background: url('../img/Rectangle 38.jpg') #C4C4C4;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 95vh;
-  color: var(--secondary-color);
-}
-.hero-content {
-  padding: 0 0 2rem 0;
-}
-.hero-content h1 {
-  font-weight: 700;
-}
-.hero-content span {
-  opacity: 0.7;
-}
-.navbar-dark .navbar-nav .nav-link {
-  color: var(--secondary-color);
-}
-.nav-scroll {
-  box-shadow: 2px 6px 10px rgba(38, 59, 85, 0.2);
-  background: var(--primary-color);
-}
-.about-content {
-  height: 771px;
-  color: #FFFFFF;
-  background: var(--primary-color);
-  padding: 1rem 3rem;
-}
+/******************************************************************************************************
+                                      DON'T REPEAT YOURSELF
+*******************************************************************************************************/
 .about-content h2, .services-content h2, .blog-heading, .team-heading, .testimonial-heading, .contact-heading {
   position: relative;
 }
@@ -108,56 +88,25 @@ img {
  .team-heading:before, .testimonial-heading:before {
    border: 4px solid #263B55;
  }
-#about img {
-  max-width: 100%;
-  height: 904px;
-  object-fit: cover;
-}
-#stats {
-  background: var(--primary-color);
-  color: #FFFFFF;
-}
-.blog-content {
-  border: 1px solid #614751;
-}
-.team-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-weight: 800;
-}
-.opaque {
-  opacity: 0.6;
-}
-.testimonial-content {
-  width: 80%;
-  border: 1px solid #614751;
-}
 .contact-form, #footer {
   background: var(--primary-color);
   color: #FFFFFF;
 }
-#footer p {
-  color: #C4C4C4;
-  font-weight: 300;
-}
-#footer a {
-  color: #FFFFFF;
-}
-#footer a:hover {
-  color: #C4C4C4;
-}
 
 
-@media screen and (max-width: 768px) {
-  .testimonial-content {
-    margin-left: auto;
-    margin-right: auto;
-  }
+
+
+/******************************************************************************************************
+                                      NAVIGATION BAR
+*******************************************************************************************************/
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--secondary-color);
 }
-
-
+.nav-scroll {
+  box-shadow: 2px 6px 10px rgba(38, 59, 85, 0.2);
+  background: var(--primary-color);
+}
+/*Hamburger menu*/
 .burger-menu {
   width: 35px;
   cursor: pointer;
@@ -173,9 +122,7 @@ img {
   background: #FFFFFF;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
-  /*position: fixed;*/
 }
-
 .line-1 {
   width: 35px;
 }
@@ -191,21 +138,112 @@ img {
 .toggle div {
   width: 40px;
 }
-
 .toggle .line-1 {
   -webkit-transform: rotate(-45deg) translate(-6px, 7px);
           transform: rotate(-45deg) translate(-6px, 7px);
 }
-
 .toggle .line-2 {
   opacity: 0;
 }
-
 .toggle .line-3 {
   -webkit-transform: rotate(45deg) translate(-4px, -7px);
           transform: rotate(45deg) translate(-4px, -7px);
 }
+/*Navigation ends*/
+
+/******************************************************************************************************
+                                      HERO
+*******************************************************************************************************/
+#hero {
+  background: url('../img/Rectangle 38.jpg') #C4C4C4;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 95vh;
+  color: var(--secondary-color);
+}
+.hero-content {
+  padding: 0 0 2rem 0;
+}
+.hero-content h1 {
+  font-weight: 700;
+}
+
+/******************************************************************************************************
+                                      ABOUT
+*******************************************************************************************************/
+.about-content {
+  height: 771px;
+  color: #FFFFFF;
+  background: var(--primary-color);
+  padding: 1rem 3rem;
+}
+#about img {
+  max-width: 100%;
+  height: 904px;
+  object-fit: cover;
+}
+
+
+/******************************************************************************************************
+                                      SERVICES
+*******************************************************************************************************/
+#stats {
+  background: var(--primary-color);
+  color: #FFFFFF;
+}
+
+/******************************************************************************************************
+                                      BLOG
+*******************************************************************************************************/
+.blog-content {
+  border: 1px solid #614751;
+}
+
+
+/******************************************************************************************************
+                                      TEAM
+*******************************************************************************************************/
+.team-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 800;
+}
+
+/******************************************************************************************************
+                                      TESTIMONIAL
+*******************************************************************************************************/
+.testimonial-content {
+  width: 80%;
+  border: 1px solid #614751;
+}
+
+/******************************************************************************************************
+                                      FOOTER
+*******************************************************************************************************/
+#footer p {
+  color: #C4C4C4;
+  font-weight: 300;
+}
+#footer a {
+  color: #FFFFFF;
+}
+#footer a:hover {
+  color: #C4C4C4;
+}
+
+
+/******************************************************************************************************
+                                      MEDIA QUERIES
+*******************************************************************************************************/
 @media (max-width: 768px){
+  .testimonial-content {
+    margin-left: auto;
+    margin-right: auto;
+  }
   .navbar-collapse {
     height: 100vh;
     top: 0;

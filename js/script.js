@@ -2,7 +2,7 @@
 const nav = document.querySelector('.navbar'),
       burger = document.querySelector('.burger-menu'),
       navbar = document.querySelector('.navbar-nav'),
-      navbar2 = document.querySelector('.navbar-collapse')
+      navbar2 = document.querySelector('.navbar-collapse');
 
 
 // Listen for scrolling event on the browser
