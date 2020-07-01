@@ -1,7 +1,8 @@
 //UI VAR
 const nav = document.querySelector('.navbar'),
       burger = document.querySelector('.burger-menu'),
-      navbar = document.querySelector('.navbar-nav')
+      navbar = document.querySelector('.navbar-nav'),
+      navbar2 = document.querySelector('.navbar-collapse')
 
 
 // Listen for scrolling event on the browser
@@ -18,7 +19,12 @@ window.addEventListener('scroll', (e) => {
   }
 })
 
-
+nav.addEventListener('click', (e) => {
+  if(e.target.className === 'nav-link') {
+    navbar2.classList.toggle('show');
+    burger.classList.toggle('toggle');
+  }
+})
 burger.addEventListener('click', (e) => {
     burger.classList.toggle('toggle');
 })
