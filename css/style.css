@@ -127,7 +127,17 @@ img {
   width: 80%;
   border: 1px solid #614751;
 }
-.contact-form {
+.contact-form, #footer {
   background: var(--primary-color);
   color: #FFFFFF;
+}
+#footer p {
+  color: #C4C4C4;
+  font-weight: 300;
+}
+#footer a {
+  color: #FFFFFF;
+}
+#footer a:hover {
+  color: #C4C4C4;
 }
